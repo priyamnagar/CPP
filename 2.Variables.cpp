@@ -10,10 +10,17 @@ ex: int a; Variables can be initialized in there declaration.
 so you can declare a variable multiple times, but ut can only be defined once in a file.
 
 -> To acces a global variable, when a local variable is present with the same name, we use the scope resolution operator(::) as ::x.
+
+-> There are two ways to define constants: #define preprocessor, const keyword.
 */
 
 
 #include <iostream>
+
+//constant
+#define LENGTH 10
+#define WIDTH 5
+
 using namespace std;
 
     extern int a,b;
@@ -24,6 +31,10 @@ int main(){
     int c;
     char d='\0';
     int *e=NULL;
+
+    const char NEWLINE = '\n';
+
+    cout<< LENGTH << WIDTH << NEWLINE;
 
     return 0;
 
