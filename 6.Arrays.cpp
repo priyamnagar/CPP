@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 void test_array(){
@@ -56,16 +57,19 @@ void pointer_array(){
 }
 
 void test_string(){
-    
+    string str1 = "Hello";
+    string str2 = " World!";
+
+    cout << str1+str2 << endl;
     return;
 }
 
 int main(){
-//    test_array();
+    test_array();
 
-//    multi_dim();
+    multi_dim();
 
-//    pointer_array();
+    pointer_array();
 
     test_string();
     return 0;
